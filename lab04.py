@@ -163,7 +163,7 @@ input("Roll for the first item (Press enter)")
 lootRoll = random.choice(1, len(loot_options) + 1)
 loot = loot_options.pop(lootRoll - 1)
 belt.append(loot)
-print("Your belt: " + belt)
+print("Your belt: ", belt)
 
 # Lab 04 - Question 6
 # Roll for and collect your second loot item
@@ -171,7 +171,13 @@ input("Roll for the second item (Press enter)")
 lootRoll = random.choice(1, len(loot_options) + 1)
 loot = loot_options.pop(lootRoll - 1)
 belt.append(loot)
-print("Your belt: " + belt)
+print("Your belt: ", belt)
+
+# Lab 04 - Question 7
+# Sort the belt
+print("You're neat, so you organize your belt alphabetically: ")
+belt.sort()
+print("Your belt: ", belt)
 
 input("Analyze the roll (Press enter)")
 # Compare Player vs Monster's strength
