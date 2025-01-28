@@ -81,6 +81,9 @@ loot_options = ["Health Potion", "Poison Potion", "Secret Note", "Leather Boots"
 good_loot_options = ["Health Potion", "Leather Boots"]
 bad_loot_options = ["Poison Potion"]
 
+# Lab 04 - Question 4
+belt = [] 
+
 # Lab 04 - Question 1
 # Define the Monster's powers
 monster_powers = {
@@ -167,8 +170,7 @@ power_roll = random.choice(["Fire Magic", "Freezing Time", "Super Hearing"])
 # Lab 04 - Question 3
 # Increase the Monster's combat strength by it's power, without going over 6
 m_combat_strength = min(6, m_combat_strength + monster_powers[power_roll])
-print("The monster's combat strength is now " + str(m_combat_strength) + 
-      " using the magic power of " + power_roll + ".")
+print("The monster's combat strength is now " + str(m_combat_strength) + " using the " + power_roll + " magic power.")
 
 # Loop while the monster and the player are alive. Call fight sequence functions
 print("You meet the monster. FIGHT!!")
